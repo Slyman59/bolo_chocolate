@@ -32,9 +32,8 @@ h1{
 }
 div.contenu{
     background-color: white;
-    margin: 60px 10% 80px 10%;
-    padding: 0px 30px 30px 30px;
-    min-width: 350px;
+    margin: 40px 8px 40px 8px;
+    padding: 0px 8px 20px 8px;
     box-shadow: 0px 0px 8px 8px rgb(0, 0, 0, 0.1);
     overflow: visible; 
     /* REMARQUE : on va mettre une div pour les tableaux pour les remettre en mode overflow:auto 
@@ -72,7 +71,7 @@ table.info{
     bottom: 0;
     background-color: #6C829DC0;
     color: white;
-    height: 80px;
+    height: 50px;
     width: 100%;
 }
 
@@ -82,12 +81,12 @@ div.info{
 
 table.info td{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: top;
 }
 
 table.info th{
-    font-size: 16px;
+    font-size: 14px;
     vertical-align: bottom;
     padding-bottom: 8px;
 }
@@ -101,17 +100,12 @@ img.info{
 }
 
 div.colonne{
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
 }
 
 div.colonne1{
     display: inline-block;
-    margin-right: 10%;
-}
-
-div.colonne2{
-    float: right;
 }
 
 div.colonne h2{
@@ -158,3 +152,47 @@ table.preparation td.preparation_etape{
 table.preparation tr{
     height: 40px;
 }
+
+/*Styles pour ordinateur*/
+@media only screen and (min-width: 768px){
+    div.contenu{
+        margin: 60px 10% 80px 10%;
+        padding: 0px 30px 30px 30px;
+        min-width: 350px;
+    }
+
+    table.info{
+        height: 80px;
+    }
+
+    table.info td{
+        font-size: 14px;
+    }
+    
+    table.info th{
+        font-size: 16px;
+        padding-bottom: 8px;
+    }
+
+    div.colonne{
+        width: 45%;
+    }
+    
+    div.colonne1{
+        margin-right: 10%;
+    }
+    
+    div.colonne2{
+        float: right;
+    }
+}
+
+/*Styles pour cas d'écran très grand (télévision)*/
+@media only screen and (min-width: 900px){
+    div.contenu{
+        margin-right: auto;
+        margin-left: auto;
+        width: 645px;
+    }
+}
+
